@@ -21,7 +21,7 @@ public class HelloTraceV1 {
         return new TraceStatus(traceId, startTimeMs,message);
     }
 
-    public void end(TraceStatus status) {
+    public void  end(TraceStatus status) {
         complete(status, null);
     }
 
