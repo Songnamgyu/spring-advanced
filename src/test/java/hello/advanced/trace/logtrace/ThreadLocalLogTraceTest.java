@@ -1,13 +1,12 @@
 package hello.advanced.trace.logtrace;
 
 import hello.advanced.trace.TraceStatus;
+import hello.advanced.trace.threadlocal.code.ThreadLocalService;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+class ThreadLocalLogTraceTest {
 
-class FieldLogTraceTest {
-
-    FieldLogTrace trace = new FieldLogTrace();
+   ThreadLocalLogTrace trace  = new ThreadLocalLogTrace();
 
     @Test
     public void begin_end_level() throws Exception {
